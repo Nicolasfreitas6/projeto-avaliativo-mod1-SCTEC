@@ -14,48 +14,48 @@ CREATE DATABASE transparencia;
 --CAMADA RAW: Camada fiel dos CSV's, com todas as colunas em VARCHAR, sem PK/FK/Constraints
 DROP TABLE IF EXISTS raw_viagem;
 CREATE TABLE raw_viagem(
-    identificador_processo_viagem VARCHAR(50),
-    num_proposta_pcdp VARCHAR(50),
+    identificador_processo_viagem VARCHAR(255),
+    num_proposta_pcdp VARCHAR(255),
     situacao VARCHAR (4000),
     viagem_urgente VARCHAR (4000),
     justificativa_urgencia_viagem VARCHAR (4000),
-    codigo_orgao_superior VARCHAR(50),
-    nome_orgao_superior VARCHAR (50),
-    codigo_orgao_solicitante VARCHAR(50),
+    codigo_orgao_superior VARCHAR(255),
+    nome_orgao_superior VARCHAR (255255),
+    codigo_orgao_solicitante VARCHAR(255),
     nome_orgao_solicitante VARCHAR(4000),
-    cpf_viajante VARCHAR(50),
-    nome_viajante  VARCHAR(4000),
+    cpf_viajante VARCHAR(255),
+    nome_viajante VARCHAR(4000),
     cargo VARCHAR(4000),
     funcao VARCHAR(4000),
     descricao_funcao VARCHAR(4000),
-    data_inicio VARCHAR(50),
-    data_fim VARCHAR(50),
+    data_inicio VARCHAR(255),
+    data_fim VARCHAR(255),
     destinos VARCHAR(4000),
     motivo VARCHAR(4000),
-    valor_diarias VARCHAR(50),
-    valor_passagens VARCHAR(50),
-    valor_devolucao VARCHAR(50),
-    valor_outros_gastos VARCHAR(50)
+    valor_diarias VARCHAR(255),
+    valor_passagens VARCHAR(255),255
+    valor_devolucao VARCHAR(255),
+    valor_outros_gastos VARCHAR(255)
 );
 
 DROP TABLE IF EXISTS raw_pagamento;
 CREATE TABLE raw_pagamento (
-    identificador_processo_viagem VARCHAR(50),
-    num_proposta_pcdp VARCHAR(50),
-    codigo_orgao_superior VARCHAR(50),
+    identificador_processo_viagem VARCHAR(255),
+    num_proposta_pcdp VARCHAR(255),
+    codigo_orgao_superior VARCHAR(255),
     nome_orgao_superior VARCHAR(4000),
-    codigo_orgao_pagador VARCHAR(50),
+    codigo_orgao_pagador VARCHAR(255),
     nome_orgao_pagador VARCHAR(4000),
-    codigo_unidade_gestora_pagadora VARCHAR(50),
+    codigo_unidade_gestora_pagadora VARCHAR(255),
     nome_unidade_gestora_pagadora VARCHAR(4000),
     tipo_pagamento VARCHAR(4000),
-    valor VARCHAR(50)
+    valor VARCHAR(255)255
 );
 
 DROP TABLE IF EXISTS raw_passagem;
 CREATE TABLE raw_passagem (
-    identificador_processo_viagem VARCHAR(50),
-    num_proposta_pcdp VARCHAR(50),
+    identificador_processo_viagem VARCHAR(255),
+    num_proposta_pcdp VARCHAR(255),
     meio_transporte VARCHAR(4000),
     pais_origem_ida VARCHAR(4000),
     uf_origem_ida VARCHAR(4000),
@@ -64,33 +64,33 @@ CREATE TABLE raw_passagem (
     uf_destino_ida VARCHAR(4000),
     cidade_destino_ida VARCHAR(4000),
     pais_origem_volta VARCHAR(4000),
-    uf_origem_volta VARCHAR(4000),
+    uf_origem_volta VARCHAR(4000),255
     cidade_origem_volta VARCHAR(4000),
     pais_destino_volta VARCHAR(4000),
     uf_destino_volta VARCHAR(4000),
     cidade_destino_volta VARCHAR(4000),
-    valor_passagem VARCHAR(50),
-    taxa_servico VARCHAR(50),
-    data_emissao_compra VARCHAR(50),
-    hora_emissao_compra VARCHAR(50)
+    valor_passagem VARCHAR(255),
+    taxa_servico VARCHAR(255),
+    data_emissao_compra VARCHAR(255),
+    hora_emissao_compra VARCHAR(255)
 );
 
 DROP TABLE IF EXISTS raw_trecho;
 CREATE TABLE raw_trecho (
-    identificador_processo_viagem VARCHAR(50),
-    numero_proposta_pcdp VARCHAR(50),
-    sequencia_trecho VARCHAR(50),
-    origem_data VARCHAR(50),
+    identificador_processo_viagem VARCHAR(255),
+    255 VARCHAR(255),
+    sequencia_trecho VARCHAR(255),
+    origem_data VARCHAR(255),
     origem_pais VARCHAR(4000),
     origem_uf VARCHAR(4000),
     origem_cidade VARCHAR(4000),
-    destino_data VARCHAR(50),
+    destino_data VARCHAR(255),
     destino_pais VARCHAR(4000),
     destino_uf VARCHAR(4000),
     destino_cidad VARCHAR(4000),
     meio_transporte VARCHAR(4000),
-    numero_diarias VARCHAR(50),
-    missao VARCHAR(50)
+    numero_diarias VARCHAR(255),
+    missao VARCHAR(255)
 );
 
 --CAMADA SILVER: Dados limpos, tipados, com PK, FK e constraints (NOT NULL, CHECK, UNIQUE).
