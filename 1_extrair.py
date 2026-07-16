@@ -1,6 +1,6 @@
 #Fase 1 do pipeline: Baixar o .zip do Google Drive, extrair os 4 CSVs e carregar o conteúdo (Sem alterações) para o Raw.
 
-#Idempotente: usa TRUNCATE antes de carregar, entao pode rodar quantas vezes quiser sem duplicar dados.
+#Idempotente: Usa TRUNCATE antes de carregar, entao pode rodar quantas vezes quiser sem duplicar dados.
 
 import zipfile
 import gdown
