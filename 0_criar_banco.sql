@@ -21,6 +21,7 @@ CREATE TABLE raw_viagem(
     justificativa_urgencia_viagem VARCHAR (4000),
     codigo_orgao_superior VARCHAR(255),
     nome_orgao_superior VARCHAR (255255),
+    nome_orgao_superior VARCHAR (255),
     codigo_orgao_solicitante VARCHAR(255),
     nome_orgao_solicitante VARCHAR(4000),
     cpf_viajante VARCHAR(255),
@@ -34,6 +35,7 @@ CREATE TABLE raw_viagem(
     motivo VARCHAR(4000),
     valor_diarias VARCHAR(255),
     valor_passagens VARCHAR(255),255
+    valor_passagens VARCHAR(255),
     valor_devolucao VARCHAR(255),
     valor_outros_gastos VARCHAR(255)
 );
@@ -50,6 +52,7 @@ CREATE TABLE raw_pagamento (
     nome_unidade_gestora_pagadora VARCHAR(4000),
     tipo_pagamento VARCHAR(4000),
     valor VARCHAR(255)255
+    valor VARCHAR(255)
 );
 
 DROP TABLE IF EXISTS raw_passagem;
