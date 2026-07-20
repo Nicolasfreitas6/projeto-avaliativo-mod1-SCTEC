@@ -23,15 +23,14 @@ O projeto adota a **Arquitetura Medallion**:
 6. Abra e execute o arquivo `3_analise.ipynb` para visualizar as tabelas e gráficos gerados.
 
 ## Insights e Conclusões da Análise
-A partir das consultas executadas na camada Silver e na Camada Gold Agregada, obtivemos os seguintes insights sobre os gastos de viagens em 2025[cite: 1, 7]:
+A partir das consultas executadas na camada Silver e na Camada Gold Agregada, obtivemos os seguintes insights sobre os gastos de viagens:
 
 * **Tipos de Gastos**: As **Diárias** representam o maior valor médio pago por viagem (R$ 2.078,28), seguidas de perto pelas **Passagens** (R$ 1.878,34).
 * **Modais de Transporte**: O **Veículo Oficial** é o meio de transporte mais utilizado no total de trechos (386.424 ocorrências), seguido pelo modal **Aéreo** (232.666 ocorrências).
 * **Destinos mais Frequentes**: O estado de **São Paulo** foi o destino líder em trechos com 82.722 ocorrências, seguido pelo **Distrito Federal** com 79.962.
 * **Concentração de Custos**: O **Ministério da Justiça e Segurança Pública** disparou como o órgão de maior custo total declarado (R$ 7,54 bilhões) e também foi o órgão que mais efetuou pagamentos no total (R$ 488,83 milhões).
 * **Viagens de Alto Custo**: Viagens internacionais ou para locais específicos apresentam custos médios altíssimos, tendo como destino principal de maior custo médio a cidade de **Guiyang/China** (R$ 112.870,41 por viagem).
-* **Duração Atípica**: A viagem de maior duração registrada foi para o destino de **Mogi Mirim/SP**, com **383 dias** de duração e custo total zerado (R$ 0.0), o que pode indicar um ponto de atenção para auditoria ou dado atípico na base de origem.
+* **Duração Atípica**: A viagem de maior duração registrada foi para o destino de **Mogi Mirim/SP**, com **383 dias** de duração e custo total zerado.
 
 ## Melhorias Futuras
-*Conectar a camada Gold a um painel interativo no Power BI ou Looker Studio.
-
+Conectar a camada Gold a um painel interativo no Power BI ou Looker Studio.
